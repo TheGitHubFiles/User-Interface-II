@@ -89,6 +89,8 @@ header nav a{
     display: flex;
     justify-content: space-around;
     align-items:center;
+    flex-wrap:wrap;
+    
     
 
 }
@@ -131,5 +133,36 @@ a:hover{
     border-radius:20px;
     transition:.4s;
 }
+@media(max-width:800px){
+    .project div{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+    .project div img{
+        margin:1%;
+        width: 40vw;
+    }
+    .project div p{
+        width:100%;
+        padding:2% 25%;
+        text-align:center;
+    }
+    .hero-image{
+        height:30vh;
+        margin:0 5%;
+        border:1px solid grey;
+    }
+    .hero-color-change{
+        background-color:#486F88;
+    }
+    }
+    @media(max-width:500px){
+        header nav{
+            flex-direction: column;
+        }
+        
+    }
+
 
 
